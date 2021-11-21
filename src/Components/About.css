@@ -1,0 +1,49 @@
+.about-img {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about-details {
+    flex: 1;
+}
+
+.about-details p {
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+}
+
+.about-details b {
+    color: crimson;
+    font-size: 30px;
+    font-style: italic;
+}
+
+@media screen and (min-width:664px) {
+    .about{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .about-center {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    .about-img {
+        width: 350px;
+        margin: 20px auto;
+    }
+
+    .about-details {
+        flex: 1;
+        margin-left: 20px;
+    }
+}
