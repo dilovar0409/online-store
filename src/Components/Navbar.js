@@ -5,19 +5,12 @@ import { connect } from 'react-redux';
 import { toggleNav, closeNavbar } from '../Redux/Action/itemActions';
 
 const Navbar = (props) => {
-
-    // const [toggle, setToggle] = useState(false);
-
-    // const toggleNav = () => {
-    //     setToggle(!toggle)
-    // }
-
     return (
         <div className="navbar">
             <nav className="nav">
                 <div className="logoBtn">
                     <Link to="/"><img src={Logo} alt="Logo" />
-                        <p><span>C</span>lothes</p>
+                        <p><span>M</span>arket</p>
                     </Link>
                     <div className="shopping-icon mobile-shopping">
                         <Link to="/cart">

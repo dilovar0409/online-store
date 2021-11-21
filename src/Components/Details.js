@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './Details.css';
 import { useParams, Link } from 'react-router-dom';
-import { Data } from './Data';
 import { connect } from 'react-redux';
 import { getItems, AddToCart } from '../Redux/Action/itemActions';
 
@@ -29,7 +28,7 @@ const Details = (props) => {
                         <p className="details-price">price: <span>${detailsProduct.price}</span></p>
                         <div className="details-btn">
                             <Link to="/products"><button>Back to produts</button></Link>
-                            <button onClick={() => props.AddToCart(detailsProduct._id)}>Add to cart</button>
+                            <button onClick={()=>props.AddToCart(detailsProduct._id)}>Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -42,4 +41,4 @@ const mapStateToProps = (state) => ({
     item: state.item
 })
 
-export default connect(mapStateToProps(getItems, AddToCart))(Details)
+export default connect(mapStateToProps,{getItems, AddToCart})(Details)

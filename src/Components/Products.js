@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Data } from './Data';
+import React, {  useEffect } from 'react';
 import Product from './Product';
 import './Products.css';
 import { connect } from 'react-redux';
 import { getItems, AddToCart, bannerClose } from '../Redux/Action/itemActions';
 
 const Products = (props) => {
-
-    // const [state, setState] = useState(Data)
 
     useEffect(() => {
         props.getItems()

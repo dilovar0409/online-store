@@ -98,6 +98,8 @@ nav .logoBtn a:hover {
 
 nav .logoBtn a img {
   width: 45px;
+  height: 40px;
+  object-fit: cover;
   margin-right: 5px;
 }
 

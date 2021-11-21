@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react';
-// import { Data } from './Data';
 import './Cart.css';
 import { connect } from 'react-redux';
 import { deleteItem, increaseItem, decreaseItem, getTotal } from '../Redux/Action/itemActions';
 
 const Cart = (props) => {
 
-    // const [cart, setCart] = useState(Data)
-
     const { cart } = props.item;
 
     useEffect(() => {
-        props.getTotals()
+        // props.getTotals()
     }, [])
 
     return (

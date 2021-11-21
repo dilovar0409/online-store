@@ -16,7 +16,7 @@
 }
 
 .box-img {
-    background: rgb(226, 224, 224);
+    background: black;
 }
 
 .product img {
@@ -25,7 +25,7 @@
     transition: all 0.4s ease-in-out;
 }
 
-.product:hover img {
+.product img:hover {
     transform: scale(1.05);
 }
 

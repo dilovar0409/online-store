@@ -1,6 +1,6 @@
 import Images from "../Assets/T-short.png"
 import Images1 from "../Assets/T-short2.jpg"
-import Images2 from "../Assets/T-short.png"
+import Images2 from "../Assets/white.png"
 export const Data = [
     {
         _id: 1,
@@ -13,7 +13,7 @@ export const Data = [
     },
     {
         _id: 2,
-        img: Images,
+        img: Images2,
         title: "Nike air max 2021",
         price: "100",
         details: "Nike air max 2020 is the newest trend and design from the company with best materials. It provides the best feeling for your foots and and your health.",
