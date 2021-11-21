@@ -401,7 +401,7 @@ const Todos = (state = initialState, action) => {
                 const items = state.items.filter(item => item._id === action.payload);
                 items.forEach(item => {
                     item.isInCart = true
-                    // alert(`already in cart`)
+                    alert(`already in cart`)
                 })
                 return {
                     ...state
