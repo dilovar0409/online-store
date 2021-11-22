@@ -34,6 +34,7 @@ const Navbar = (props) => {
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/products">Products</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
+                            {/* <li><Link to="/contact">Contact</Link></li> */}
                         </ul>
                     </div>
                 </div>
